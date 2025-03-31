@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>Pagina</title>
+  </head>
+  <body>
+    <div class="busqueda">
+      <i class="bi bi-list navbar-toggler" onclick="toggleSidebar()"></i>
+
+      <h1>Rating movies</h1>
+      <div id="busqueda">
+        <input type="search" placeholder="Buscar pelicula" id="searchBox" />
+      </div>
+    </div>
+    <div class="sidebar" id="sidebar">
+      <div class="dropdown">
+        <button class="listbutton" onclick="toggleDropdown('dropdown1')">
+          Generos
+        </button>
+        <div class="dropdowncontent" id="dropdown1"></div>
+      </div>
+      <div class="dropdown">
+        <button class="listbutton" onclick="toggleDropdown('dropdown2')">
+          Edades
+        </button>
+        <div class="dropdowncontent" id="dropdown2"></div>
+      </div>
+
+      <button class="listbutton" id="clearfilter" onclick="clearfilter()">
+        Limpiar filtro
+      </button>
+    </div>
+
+    <p id="no_resulst">no hay resultados</p>
+    <div id="galeria"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

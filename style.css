@@ -124,10 +124,10 @@ button {
 
   flex-direction: column;
   justify-content: start;
-  padding: 2%;
-  padding-top: 10%;
+  padding: 3%;
+  padding-top: 10rem;
   position: fixed;
-  left: -18%;
+  left: -350px;
   top: 0;
   width: 23rem;
   height: 100%;
@@ -225,4 +225,33 @@ img {
 }
 .filtro {
   display: none;
+}
+
+@media (max-width: 900px) {
+  #busqueda input {
+    min-width: 5rem;
+  }
+  #busqueda {
+    grid-row: 2;
+    grid-column: 3;
+  }
+  .busqueda h1 {
+    grid-column: 1/4;
+    font-size: 2rem;
+  }
+  .busqueda i {
+    grid-row: 1;
+
+    top: 3%;
+  }
+  .busqueda {
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .sidebar {
+    left: -75%;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+
+    height: auto;
+  }
 }
